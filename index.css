@@ -11,6 +11,7 @@ body
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
+    color: black;
 }
 /* This is title and scoreboard */
 .scoreboard{
