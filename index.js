@@ -1,35 +1,29 @@
+function onclickCells()
+{
+    var playerSym = "x"
+    var gEnded = false
+    if(playerSym = "x"){
+        playerSym = "o"
+    }
+    else{
+        playerSym = "x"
+    }
+    let tdcells = document.getElementsByClassName("cell")
+    for(i = 0; i < tdcells.length; i++){
+    tdcells.replace("", playerSym)
+    }
+    return playerSym;
+}
 
 
 
+// function winner(){
+//     var win = [[1,2,3],[4,5,6],[7,8,9],[1,4,7],[2,5,8],[3,6,9],[1,5,9],[3,5,7]]
+//     if(){}
 
-
-
-
-
-// I prolly shouldn't be messing with this shit so late -SERENA
-
-
-// function game(){}
-
-// function playerScore(){}
-
-// function onclickCells(){}
-
-// function winner(){}
-
-// function restartGame(){}
-// function switchTurn()
-// {
-//     var player1 = "X";
-//     var player2 = "O";
-//     var currentPlayer = player1;
-//     if(currentPlayer === player1){
-//         currentPlayer = player2
-//     }
-//     else{
-//         currentPlayer = player1
-//     }
 // }
+
+
 // function playerTurn()
 // {
 //     var x = document.getElementById("player-turn").getElementsByTagName("h4")
@@ -38,8 +32,8 @@
 //     }
 // }
 
-// var c = confirm(`${playerSymbol} Wins!`)
-// if(c == true)
+// var c = confirm(`_ Wins!`)
+// if()
 // {
-//     window.location.reload()
+//     window.location.reload(true)
 // }
