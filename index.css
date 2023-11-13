@@ -11,6 +11,7 @@ body
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
+    color: black;
 }
 /* This is title and scoreboard */
 .scoreboard{
@@ -55,5 +56,9 @@ td
     height: 100px;
     border: 3px solid black;
     background-color: aliceblue;
+}
+td:hover{
+    background-color: rgb(240, 168, 204);
+    box-shadow: 10px 5px 10px 5px;
 }
 
