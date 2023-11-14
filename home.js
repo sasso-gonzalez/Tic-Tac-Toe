@@ -1,3 +1,4 @@
+//global variables
 var playerSym = "o";
 var pTie = 0;
 var p1Win = 0;
