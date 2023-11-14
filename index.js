@@ -35,7 +35,7 @@ function onclickCells(cell)
             p1Win += 1 
             document.getElementById('score-player1').innerHTML = p1Win
         }
-        else if(cell1.innerHTML === 'o'){
+        else if(cell1.innerHTML == 'o'){
             p2Win += 1
             document.getElementById('score-player2').innerHTML = p2Win
         }
@@ -102,6 +102,7 @@ function onclickCells(cell)
         }
         reset()
     }
+
     // Diagonal winning combos
     else if(cell1.innerHTML != '' && cell1.innerHTML == cell5.innerHTML && cell5.innerHTML == cell9.innerHTML)
     {
@@ -130,9 +131,10 @@ function onclickCells(cell)
     // ties
     else if(turns == 9){
         pTie += 1
-        document.getElementById("player-turn").innerHTML = `No Turns left.`
+        document.getElementById("player-turn").innerHTML = `No Turns left. Its a Tie! Start again...`
         document.getElementById('score-tie').innerHTML = pTie
         reset()
+        
     }
     console.log(turns)
 }
@@ -167,5 +169,5 @@ function reset(){
         cell8.style.pointerEvents = "auto"
         cell9.style.pointerEvents = "auto"
     }, 1000);
-    
+    turns = 0
 }
