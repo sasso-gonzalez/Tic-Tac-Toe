@@ -35,11 +35,14 @@ function onclickCells(cell)
         if(cell1.innerHTML == 'x'){
             p1Win += 1 
             document.getElementById('score-player1').innerHTML = p1Win
+            
         }
         else if(cell1.innerHTML == 'o'){
             p2Win += 1
             document.getElementById('score-player2').innerHTML = p2Win
         }
+        x = document.getElementById("player-turn").innerHTML = `${playerSym} Wins! Player's Turn: x`
+        playerSym = "o" //gets the first move to be player X
         reset()
     }
     else if(cell4.innerHTML != '' && cell4.innerHTML == cell5.innerHTML && cell5.innerHTML == cell6.innerHTML)
@@ -52,6 +55,8 @@ function onclickCells(cell)
             p2Win += 1
             document.getElementById('score-player2').innerHTML = p2Win
         }
+        x = document.getElementById("player-turn").innerHTML = `${playerSym} Wins! Player's Turn: x`
+        playerSym = "o" //gets the first move to be player X
         reset()
     }
     else if(cell7.innerHTML != '' && cell7.innerHTML == cell8.innerHTML && cell8.innerHTML == cell9.innerHTML)
@@ -64,6 +69,8 @@ function onclickCells(cell)
             p2Win += 1
             document.getElementById('score-player2').innerHTML = p2Win
         }
+        x = document.getElementById("player-turn").innerHTML = `${playerSym} Wins! Player's Turn: x`
+        playerSym = "o" //gets the first move to be player X
         reset()
     }
     // vertical winning combos
@@ -77,6 +84,8 @@ function onclickCells(cell)
             p2Win += 1
             document.getElementById('score-player2').innerHTML = p2Win
         }
+        x = document.getElementById("player-turn").innerHTML = `${playerSym} Wins! Player's Turn: x`
+        playerSym = "o" //gets the first move to be player X
         reset()
     }
     else if(cell2.innerHTML != '' && cell2.innerHTML == cell5.innerHTML && cell5.innerHTML == cell8.innerHTML)
@@ -89,6 +98,8 @@ function onclickCells(cell)
             p2Win += 1
             document.getElementById('score-player2').innerHTML = p2Win
         }
+        x = document.getElementById("player-turn").innerHTML = `${playerSym} Wins! Player's Turn: x`
+        playerSym = "o" //gets the first move to be player X
         reset()
     }
      else if(cell3.innerHTML != '' && cell3.innerHTML == cell6.innerHTML && cell6.innerHTML == cell9.innerHTML)
@@ -101,6 +112,8 @@ function onclickCells(cell)
             p2Win += 1
             document.getElementById('score-player2').innerHTML = p2Win
         }
+        x = document.getElementById("player-turn").innerHTML = `${playerSym} Wins! Player's Turn: x`
+        playerSym = "o" //gets the first move to be player X
         reset()
     }
 
@@ -115,6 +128,8 @@ function onclickCells(cell)
             p2Win += 1
             document.getElementById('score-player2').innerHTML = p2Win
         }
+        x = document.getElementById("player-turn").innerHTML = `${playerSym} Wins! Player's Turn: x`
+        playerSym = "o" //gets the first move to be player X
         reset()
     }
     else if(cell3.innerHTML != '' && cell3.innerHTML == cell5.innerHTML && cell5.innerHTML == cell7.innerHTML)
@@ -127,12 +142,15 @@ function onclickCells(cell)
             p2Win += 1
             document.getElementById('score-player2').innerHTML = p2Win
         }
+        x = document.getElementById("player-turn").innerHTML = `${playerSym} Wins! Player's Turn: x`
+        playerSym = "o" //gets the first move to be player X
         reset()
     }
     // ties
     else if(turns == 9){
         pTie += 1
-        document.getElementById("player-turn").innerHTML = `No Turns left. Its a Tie! Start again...`
+        document.getElementById("player-turn").innerHTML = `Its a Tie! Player's Turn: x`
+        playerSym = "o" //gets the first move to be player X
         document.getElementById('score-tie').innerHTML = pTie
         reset()
         
