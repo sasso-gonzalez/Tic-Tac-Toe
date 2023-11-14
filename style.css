@@ -7,7 +7,7 @@
 body
 {
     margin: 1in;
-    background-image: linear-gradient(rgba(162, 155, 155, 0.099), rgba(121, 113, 113, 0.619)), url(Images/background.jpeg);
+    background-image: linear-gradient(rgba(162, 155, 155, 0.099), rgba(121, 113, 113, 0.619)), url(background.jpeg);
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
