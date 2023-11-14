@@ -126,7 +126,6 @@ function onclickCells(cell)
     }
 
 
-    
 var winContainer = [winPosition.length]
 function winCheck(){
     if (playerX() == [0,1,2]){
