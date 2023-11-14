@@ -26,7 +26,6 @@ function onclickCells(cell)
     let cell8 = document.getElementById('8')
     let cell9 = document.getElementById('9')
 
-
 // horizontal winning combos
     if(cell1.innerHTML == 'x' || cell1.innerHTML == 'o' && (cell1.innerHTML == cell2.innerHTML && cell2.innerHTML == cell3.innerHTML))
     {
@@ -118,7 +117,6 @@ function onclickCells(cell)
             document.getElementById('score-player2').innerHTML = p2Win
         }
     }
-
 }
 
 
