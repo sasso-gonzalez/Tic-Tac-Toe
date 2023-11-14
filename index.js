@@ -19,8 +19,6 @@ function onclickCells(cell)
     if(turns == 9){
         x = document.getElementById("player-turn").innerHTML = `No Turns left.`
     }
-
-
 }
 
 
